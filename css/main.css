@@ -1,0 +1,13 @@
+/* main styles*/
+.navigation{
+    display:flex;
+    justify-content:space-between;
+}
+.header{
+    margin:0;
+}
+.menu li{
+    list-style:none;
+    display:inline;
+}
+
