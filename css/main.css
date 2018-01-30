@@ -2,7 +2,9 @@
 li{
     list-style: none;
 }
-
+.cxontent {
+    display:flex;
+}
 .navigation{
     display:flex;
     justify-content:space-between;
@@ -29,4 +31,16 @@ li{
     height:800px;
     width:80%;
     margin-top:20px;
+    flex-grow:1;
 }
+.graphs{
+    display:flex;
+    justify-content:center;
+}
+.graph{
+    background-color: pink;
+    height:300px;
+    width:300px;
+    margin:20px;
+
+    }
