@@ -10,7 +10,6 @@ class Navigation extends React.Component {
 						<li>About</li>
 						<li>Contact</li>
 					</ul>
-
 				</header>
 			);                
     }
