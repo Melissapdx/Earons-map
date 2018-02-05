@@ -26,3 +26,52 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+/*my css*/ 
+
+/* main styles*/
+li{
+    list-style: none;
+}
+.content {
+    display:flex;
+}
+.navigation{
+    display:flex;
+    justify-content:space-between;
+}
+.header{
+    margin:0;
+}
+.menu li{
+    display:inline;
+    margin-left: 25px;
+}
+.years{
+    display:flex;
+    flex-direction:column;
+    padding:0 20px;
+    margin-top: 0;
+}
+.container{
+    display:flex;
+    flex-direction:row;
+}
+.map{
+    background-color: yellow;
+    height:800px;
+    width:80%;
+    margin-top:20px;
+    flex-grow:1;
+}
+.graphs{
+    display:flex;
+    justify-content:center;
+}
+.graph{
+    background-color: pink;
+    height:300px;
+    width:300px;
+    margin:20px;
+
+    }
