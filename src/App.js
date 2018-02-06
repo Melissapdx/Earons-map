@@ -3,21 +3,30 @@ import logo from './logo.svg';
 import './App.css';
 // import EaronsTable from './components/table';
 import Navigation from './components/Navigation';
-import YearsNav from './components/Years';
-import ShowMap from './components/Map';
 import Graphs from './components/Graphs';
+import About from './components/About';
+import Home from './components/Home';
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom';
+
+
 
 class App extends Component {
   render() {
     return (
-      <div className="content">
-        <Navigation/>
-        <div className="container">
-          <YearsNav/>
-          <ShowMap/>
+      <Router>
+        <div className="content">
+          <Navigation/>
+          <div className="container">
+            <Route exact path="/" component={Home}/>
+            <Route path="/about" component={About}/>
+          </div>
+          <Graphs/>
         </div>
-        <Graphs/>
-      </div>
+      </Router>
     );
   }
 }
