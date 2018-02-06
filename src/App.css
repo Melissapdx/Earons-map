@@ -35,6 +35,9 @@ li{
 }
 .content {
     display:flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
 }
 .navigation{
     display:flex;
@@ -56,10 +59,10 @@ li{
 .container{
     display:flex;
     flex-direction:row;
+    flex-grow: 1;
 }
 .map{
     background-color: yellow;
-    height:800px;
     width:80%;
     margin-top:20px;
     flex-grow:1;
