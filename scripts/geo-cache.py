@@ -21,8 +21,10 @@ def geocache():
 		location = event['location']
 		street = event['street']
 		address = "{}, {}, California ".format(street,location)
-		url_address = urllib.urlencode(address)
-		
-
+		url_address = urllib.quote_plus(address)
+		address_res = url + url_address
+		req = requests.get(address_res)
+		response = req.json()
+		print response
 
 geocache()
