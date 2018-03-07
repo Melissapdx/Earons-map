@@ -5,7 +5,9 @@ import ShowMap from './../Map';
 const Home = () =>
 	[
 	<YearsNav/>,
-	<ShowMap/>
+	<ShowMap />
 	];
+
+// location={location}
 
 export default Home;
