@@ -45,6 +45,11 @@ def geocache():
     return event_data_raw
 
 
+def write_eventdata_to_file(event_data):
+    attack_data = json.dumps(event_data)
+    with open('attack_location_data.json', 'w') as outfile:
+        outfile.write(attack_data)
+
 
 attack_locations = geocache()
-print attack_locations
+write_eventdata_to_file(attack_locations)
