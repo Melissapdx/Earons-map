@@ -7,21 +7,42 @@ import {
 
 
 class YearsNav extends React.Component {
+	constructor(props){
+		super(props);
+		this.state = {
+			years:[
+				1976,
+	            1977,
+	            1978,
+	            1979,
+	            1980,
+	            1981,
+	            1982,
+	            1983,
+	            1984,
+	            1985,
+	            1986
+			],
+			activeYear:null
+		}
+
+	}
+	clickYear(year,e) {
+		e.preventDefault();
+		this.setState({
+			activeYear: year,
+		});
+	}
 	render(){
+		const listItems = this.state.years.map((year) =>
+				<li><a href="#" onClick={this.clickYear.bind(this,year)}>{year}</a></li>
+			);
+		
 		return (
 			<ul className="years">
 				<h2>Years</h2>
-	            <li>1976</li>
-	            <li>1977</li>
-	            <li>1978</li>
-	            <li>1979</li>
-	            <li>1980</li>
-	            <li>1981</li>
-	            <li>1982</li>
-	            <li>1983</li>
-	            <li>1984</li>
-	            <li>1985</li>
-	            <li>1986</li>
+				<h3>{this.state.activeYear}</h3>
+				{listItems}
 			</ul>
 		);
 	}

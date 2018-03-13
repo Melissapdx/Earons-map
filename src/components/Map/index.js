@@ -35,7 +35,6 @@ class ShowMap extends React.Component {
 
 	render() {
 		// this.updateLocation(this.props.location);
-		console.log(this.state.data);
 		return (
 				<div className="map" id="map">
 				</div>
