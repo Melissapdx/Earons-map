@@ -1,18 +1,31 @@
 import React from 'react';
-
+import data from '../../attack_location_data.js';
 class ShowMap extends React.Component {
-	
+
+	constructor(props){
+		super(props);
+		this.state = {
+			map: null,
+			data:data
+		};
+	}
 	componentDidMount() {
 		const map = new window.google.maps.Map(document.getElementById('map'), {
 			center: {lat: 38.6121895, lng: -121.3728871},
 			zoom: 8
 		});
+
+		this.state.data.forEach(function(attack_location){
+			const marker = new window.google.maps.Marker({
+				position:{lat:attack_location.lat,lng:attack_location.lng},
+				map:map
+			});
+		});
 		
-		
-		// Store a refrence to the google map in state, so that you can interact with it later.
-		// this.setState({
-		// 	map: map,	
-		// });
+		this.setState({
+			map: map,	
+		});
+
 	}
 	// updateLocation(location){
 	// 	if (location){
@@ -22,7 +35,7 @@ class ShowMap extends React.Component {
 
 	render() {
 		// this.updateLocation(this.props.location);
-
+		console.log(this.state.data);
 		return (
 				<div className="map" id="map">
 				</div>
