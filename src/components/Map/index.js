@@ -23,9 +23,14 @@ class ShowMap extends React.Component {
 		});
 		
 		this.setState({
-			map: map,	
+			map: map,
+			// location:location,
+			//makrers:markers	
 		});
 
+	}
+	updateLatLng(location){
+		
 	}
 	// updateLocation(location){
 	// 	if (location){

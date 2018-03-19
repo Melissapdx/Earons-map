@@ -2,12 +2,23 @@ import React from 'react';
 import YearsNav from './../Years';
 import ShowMap from './../Map';
 
-const Home = () =>
-	[
-	<YearsNav/>,
-	<ShowMap />
-	];
+class HomePage extends React.Component{
+	constructor(props) {
+		super(props);
+		this.state = {
+			activeYear:null
+		};
+	}
 
-// location={location}
 
-export default Home;
+	render(){
+		return (
+			<div>
+				<YearsNav />
+				<ShowMap />
+			</div>
+		);
+		
+	}
+};
+export default HomePage;

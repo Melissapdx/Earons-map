@@ -9,7 +9,7 @@ import {
 class YearsNav extends React.Component {
 	constructor(props){
 		super(props);
-		this.state = {
+		this.props = {
 			years:[
 				1976,
 	            1977,
@@ -34,6 +34,7 @@ class YearsNav extends React.Component {
 		});
 	}
 	render(){
+		const activeYear = this.props.activeYear;
 		const listItems = this.state.years.map((year) =>
 				<li><a href="#" onClick={this.clickYear.bind(this,year)}>{year}</a></li>
 			);
@@ -41,7 +42,7 @@ class YearsNav extends React.Component {
 		return (
 			<ul className="years">
 				<h2>Years</h2>
-				<h3>{this.state.activeYear}</h3>
+				<h3>{}</h3>
 				{listItems}
 			</ul>
 		);
