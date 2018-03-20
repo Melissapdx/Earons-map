@@ -9,13 +9,17 @@ class HomePage extends React.Component{
 			activeYear:null
 		};
 	}
-
+	yearDidChange(year) {
+		this.setState({
+			activeYear: year
+		});
+	}
 
 	render(){
 		return (
 			<div>
-				<YearsNav />
-				<ShowMap />
+				<YearsNav yearDidChange={this.yearDidChange.bind(this)} />
+				<ShowMap activeYear={this.state.activeYear}/>
 			</div>
 		);
 		
