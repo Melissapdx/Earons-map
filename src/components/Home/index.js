@@ -2,6 +2,8 @@ import React from 'react';
 import YearsNav from './../Years';
 import ShowMap from './../Map';
 
+const Fragment = React.Fragment;
+
 class HomePage extends React.Component{
 	constructor(props) {
 		super(props);
@@ -17,10 +19,10 @@ class HomePage extends React.Component{
 
 	render(){
 		return (
-			<div>
+			<Fragment>
 				<YearsNav yearDidChange={this.yearDidChange.bind(this)} />
 				<ShowMap activeYear={this.state.activeYear}/>
-			</div>
+			</Fragment>
 		);
 		
 	}

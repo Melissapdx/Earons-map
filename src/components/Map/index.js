@@ -41,12 +41,9 @@ class ShowMap extends React.Component {
 	render() {
 		// this.updateLocation(this.props.location);
 		return (
-			<div>
-				{this.props.activeYear}
-				<div className="map" id="map">
-				</div>
+			<div className="map" id="map">
 			</div>
-			);                
+		);                
     }
 }
 

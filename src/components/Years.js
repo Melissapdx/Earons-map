@@ -38,7 +38,12 @@ class YearsNav extends React.Component {
 		const activeYear = this.state.activeYear;
 		const listItems = this.state.years.map((year) =>
 				<li>
-					<a href="#" onClick={this.clickYear.bind(this,year)}>{year}</a>
+					<a
+						href="#"
+						className={(this.state.activeYear == year) ? "year-selected" : null}
+						onClick={this.clickYear.bind(this,year)}>
+						{year}
+					</a>
 				</li>
 			);
 		
