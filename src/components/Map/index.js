@@ -6,7 +6,7 @@ class ShowMap extends React.Component {
 		super(props);
 		this.state = {
 			map: null,
-			data:data
+			data: data
 		};
 	}
 	componentDidMount() {
@@ -15,28 +15,43 @@ class ShowMap extends React.Component {
 			zoom: 8
 		});
 
+		const markers = [];
 		this.state.data.forEach(function(attack_location){
 			const marker = new window.google.maps.Marker({
 				position:{lat:attack_location.lat,lng:attack_location.lng},
 				map:map
 			});
+			markers.push(marker);
 		});
 		
 		this.setState({
 			map: map,
-			// location:location,
-			//makrers:markers	
+			markers: markers,
 		});
 
 	}
-	updateLatLng(location){
-		
+
+	componentWillReceiveProps(nextProps){
+		console.log(nextProps);
 	}
-	// updateLocation(location){
-	// 	if (location){
-	// 		this.state.map.google.updateLatLng();
-	// 	}
-	// }
+
+	removeMarkers(){
+		const markers = this.state.markers;
+		markers.forEach(function(marker){
+			marker.setMap(null);
+		});
+
+		this.setState({
+			markers: [],
+		});
+	}
+
+	updateLatLng(location){
+		if (location){
+			this.state.map.google.updateLatLng();
+		}
+	}
+	
 
 	render() {
 		// this.updateLocation(this.props.location);
