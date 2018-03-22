@@ -31,8 +31,21 @@ class ShowMap extends React.Component {
 
 	}
 
-	componentWillReceiveProps(nextProps){
-		console.log(nextProps);
+	componentWillReceiveProps(nextProps,attack_location){
+		const markers = []
+		const year_selected = nextProps.activeYear
+		this.state.data.forEach(function(attack_location){
+				const attack_year = attack_location.date.slice(-4);
+				if (year_selected == attack_year){
+					const updated_markers = new window.google.maps.Marker({
+							position:{lat:attack_location.lat,lng:attack_location.lng},
+					});
+				markers.push(updated_markers);
+				}
+			});
+		this.setState({
+			markers: markers,
+		});
 	}
 
 	removeMarkers(){

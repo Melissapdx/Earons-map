@@ -33,6 +33,7 @@ class YearsNav extends React.Component {
 			activeYear: year,
 		});
 		this.props.yearDidChange(year);
+		
 	}
 	render(){
 		const activeYear = this.state.activeYear;
