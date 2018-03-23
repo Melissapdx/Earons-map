@@ -14,11 +14,7 @@ class ShowMap extends React.Component {
 			center: {lat: 38.6121895, lng: -121.3728871},
 			zoom: 8
 		});
-
-		const contentString = "Hello World"
-		const infowindow = new window.google.maps.InfoWindow({
-			content: contentString
-		});
+	
 
 		const markers = [];
 		this.state.data.forEach(function(attack_location){
@@ -26,6 +22,12 @@ class ShowMap extends React.Component {
 				position:{lat:attack_location.lat,lng:attack_location.lng},
 				map:map
 			});
+
+			const infowindow = new window.google.maps.InfoWindow({
+				content: `Time: ${attack_location.time} \n Date: ${attack_location.date}\n
+				Name: ${attack_location.name} \n Description: ${attack_location.description}`
+			});
+
 			marker.addListener('click',function(){
 				infowindow.open(map,marker);
 			});
