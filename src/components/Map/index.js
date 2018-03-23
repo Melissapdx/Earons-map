@@ -15,14 +15,23 @@ class ShowMap extends React.Component {
 			zoom: 8
 		});
 
+		const contentString = "Hello World"
+		const infowindow = new window.google.maps.InfoWindow({
+			content: contentString
+		});
+
 		const markers = [];
 		this.state.data.forEach(function(attack_location){
 			const marker = new window.google.maps.Marker({
 				position:{lat:attack_location.lat,lng:attack_location.lng},
 				map:map
 			});
+			marker.addListener('click',function(){
+				infowindow.open(map,marker);
+			});
 			markers.push(marker);
 		});
+		
 		
 		this.setState({
 			map: map,
