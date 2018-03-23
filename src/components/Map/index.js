@@ -14,27 +14,8 @@ class ShowMap extends React.Component {
 			center: {lat: 38.6121895, lng: -121.3728871},
 			zoom: 8
 		});
-	
+		const markers = this.addDataToMarkers(map,this.state.data)
 
-		const markers = [];
-		this.state.data.forEach(function(attack_location){
-			const marker = new window.google.maps.Marker({
-				position:{lat:attack_location.lat,lng:attack_location.lng},
-				map:map
-			});
-
-			const infowindow = new window.google.maps.InfoWindow({
-				content: `Time: ${attack_location.time} \n Date: ${attack_location.date}\n
-				Name: ${attack_location.name} \n Description: ${attack_location.description}`
-			});
-
-			marker.addListener('click',function(){
-				infowindow.open(map,marker);
-			});
-			markers.push(marker);
-		});
-		
-		
 		this.setState({
 			map: map,
 			markers: markers,
@@ -43,20 +24,20 @@ class ShowMap extends React.Component {
 	}
 
 	componentWillReceiveProps(nextProps){
+		// remove the OLD markers from the map
 		this.removeMarkers();
-		const markers = [];
+		// determine which year was slected
 		const year_selected = nextProps.activeYear;
-		const map = this.state.map;
-		this.state.data.forEach(function(attack_location){
-				const attack_year = attack_location.date.slice(-4);
-				if (year_selected == attack_year){
-					const updated_markers = new window.google.maps.Marker({
-							position:{lat:attack_location.lat,lng:attack_location.lng},
-							map:map
-					});
-				markers.push(updated_markers);
-				}
-			});
+		// Filter ALL attack data to just the attack data that matches current selected year.
+		const filterData = this.state.data.filter(function(attack_location){
+			const attack_year = attack_location.date.slice(-4);
+			if (year_selected == attack_year){
+				return true
+			}
+			return false
+		});
+		// Add the filtered data back to the map.
+		const markers = this.addDataToMarkers(this.state.map, filterData);
 		this.setState({
 			markers: markers,
 		});
@@ -73,15 +54,29 @@ class ShowMap extends React.Component {
 		});
 	}
 
-	updateLatLng(location){
-		if (location){
-			this.state.map.google.updateLatLng();
-		}
+	addDataToMarkers(map,data) {
+		const markers = [];
+		data.forEach(function(attack_location){
+			const marker = new window.google.maps.Marker({
+				position:{lat:attack_location.lat,lng:attack_location.lng},
+				map:map
+			});
+
+			const infowindow = new window.google.maps.InfoWindow({
+				content: `Time: ${attack_location.time} \n Date: ${attack_location.date}\n
+				Name: ${attack_location.name} \n Description: ${attack_location.description}`
+			});
+
+			marker.addListener('click',function(){
+				infowindow.open(map,marker);
+			});
+			markers.push(marker);
+		});
+		return markers
 	}
 	
 
 	render() {
-		// this.updateLocation(this.props.location);
 		return (
 			<div className="map" id="map">
 			</div>
