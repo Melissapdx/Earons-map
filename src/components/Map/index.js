@@ -242,11 +242,14 @@ class ShowMap extends React.Component {
 	}
 
 	addDataToMarkers(map,data) {
+		var iconBase = 'http://localhost:3000/spotlight-poi2.png';
 		const markers = [];
 		data.forEach(function(attack_location){
 			const marker = new window.google.maps.Marker({
 				position:{lat:attack_location.lat,lng:attack_location.lng},
+				icon:iconBase,
 				map:map
+			
 			});
 
 			const infowindow = new window.google.maps.InfoWindow({
