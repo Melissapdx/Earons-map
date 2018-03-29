@@ -253,8 +253,8 @@ class ShowMap extends React.Component {
 			});
 
 			const infowindow = new window.google.maps.InfoWindow({
-				content: `Time: ${attack_location.time} \n Date: ${attack_location.date}\n
-				Name: ${attack_location.name} \n Description: ${attack_location.description}`
+				content: `<p>Time:${attack_location.time}</p>\n <p>Date: ${attack_location.date}</p>\n
+				<p>Name: ${attack_location.name}</p> \n <p>Description: ${attack_location.description}</p>`
 			});
 
 			marker.addListener('click',function(){

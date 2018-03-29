@@ -33,6 +33,9 @@
 li{
     list-style: none;
 }
+a{
+  text-decoration:none;
+}
 .content {
     display:flex;
     flex-direction: column;
