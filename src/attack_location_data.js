@@ -11,8 +11,10 @@ export default
 	"id": 1,
 	"name": "Attack #1",
 	"victimAge": "23",
-	"patterns": "Stalking, Phone Calls, Gloves, Tied up with Twine, Knife, Baby Oil, Ski Mask, Small Penis",
-	"stolenItems": "Cash, Cigarettes"
+	"victimOccupation": "Insurance adjuster",
+	"recievedCalls": "Yes",
+	"weapon":"knife",
+	"stolenItems": "$10,fours silver dollers, Winston cigarettes"
 }, {
 	"description": "Two teenage girls, One attacked",
 	"lat": 38.5829737,
@@ -25,7 +27,9 @@ export default
 	"id": 2,
 	"name": "Attack #2",
 	"victimAge": "15",
-	"patterns": "Knife, Tied up with string, Baby Lotion, Face Mask, Small Penis",
+	"victimOccupation": "Student",
+	"recievedCalls": "No",
+	"weapon":"knife",
 	"stolenItems": "None"
 }, {
 	"description": "1 Woman, 2 daughters, 15 year old is suspected target,victims escaped. Aborted attack.",
@@ -39,7 +43,9 @@ export default
 	"id": 3,
 	"name": "Attack #3",
 	"victimAge":"15",
-	"patterns": "Face Mask, Gun, Club, Small Penis",
+	"victimOccupation": "Student",
+	"recievedCalls": "No",
+	"weapon":"Gun,Club",
 	"stolenItems": "None"
 }, {
 	"description": "Woman alone",
@@ -53,7 +59,9 @@ export default
 	"id": 4,
 	"name": "Attack #4",
 	"victimAge": "29",
-	"patterns": "Face Mask, Tied up with Shoelaces,Small Penis",
+	"victimOccupation": "Clerk(California Dept. of Community Colleges",
+	"recievedCalls": "No",
+	"weapon":"Knife",
 	"stolenItems": "Car"
 }, {
 	"description": "Woman and Son",
@@ -67,7 +75,9 @@ export default
 	"id": 5,
 	"name": "Attack #5",
 	"victimAge": "29",
-	"patterns": "Hang up calls,Ski Mask,Knife Tie up with Shoelaces",
+	"victimOccupation": "Air Force Reserve Lieutenant (Travis AFB), Nursing student (California State University Sacramento)",
+	"recievedCalls": "Yes",
+	"weapon":"Knife",
 	"stolenItems": "Earrings, a diamond ring, a bracelet, and other various jewelry"
 }, {
 	"description": "Woman alone, Neighbor was suspected but ruled out",
@@ -81,7 +91,9 @@ export default
 	"id": 6,
 	"name": "Attack #6",
 	"victimAge": "19",
-	"patterns": "Tied up with Shoelaces",
+	"victimOccupation": "Clerk",
+	"recievedCalls": "No",
+	"weapon":"Knife",
 	"stolenItems": " Three earrings from different sets and a couple of rings that the victim was wearing."
 }, {
 	"description": "Woman, Son and daughter.Victim later received threatening phone calls in 1991",
@@ -95,7 +107,9 @@ export default
 	"id": 7,
 	"name": "Attack #7",
 	"victimAge": "Not available",
-	"patterns": "Cord Cut from blinds",
+	"victimOccupation": "None",
+	"recievedCalls": "No",
+	"weapon":"Knife",
 	"stolenItems": "Wedding rings and other jewelry"
 }, {
 	"description": "Woman alone. Was returning home from work at time of attack. Aborted attack",
@@ -109,10 +123,12 @@ export default
 	"id": 8,
 	"name": "Attack #8",
 	"victimAge": "19",
-	"patterns": "Tied up with clothesline, Knife, Prior Phone Calls",
+	"victimOccupation": "Receptionist(Sacremento Army Depot)",
+	"recievedCalls": "No",
+	"weapon":"Knife",
 	"stolenItems": "Car keys"
 }, {
-	"description": "Woman alone.Took her to canal. Did not rape(menstruating). Not many details.",
+	"description": "Woman alone.Took her to canal. Did not rape(menstruating).",
 	"lat": 38.6747646,
 	"street": "Greenleaf Drive",
 	"location": "Citrus Heights",
@@ -123,10 +139,12 @@ export default
 	"id": 9,
 	"name": "Attack #9",
 	"victimAge": "16",
-	"patterns": "Black shoelaces,",
+	"victimOccupation": "Student (San Juan High School)",
+	"recievedCalls": "Yes",
+	"weapon":"Knife",
 	"stolenItems": "6 inch serrated knife"
 }, {
-	"description": "Attack #10 - Ladera Way - Per HAP not much record of what was found during neighborhood canvas.",
+	"description": "One women",
 	"lat": 38.64723,
 	"street": "Ladera Way",
 	"location": "Fair Oaks",
@@ -135,9 +153,14 @@ export default
 	"lng": -121.2987821,
 	"type": "Attack",
 	"id": 10,
-	"name": "Attack #10"
+	"name": "Attack #10",
+	"victimAge": "15",
+	"victimOccupation": "Student",
+	"recievedCalls": "Yes",
+	"weapon":"Knife",
+	"stolenItems": "None"
 }, {
-	"description": "Attack #11 - Glenville Circle",
+	"description": "One woman",
 	"lat": 38.5621036,
 	"street": "Glenville Circle",
 	"location": "Sacramento",
@@ -146,9 +169,14 @@ export default
 	"lng": -121.3842878,
 	"type": "Attack",
 	"id": 11,
-	"name": "Attack #11"
+	"name": "Attack #11",
+	"victimAge": "25",
+	"victimOccupation": "Secretary(Sate Capitol",
+	"recievedCalls": "No",
+	"weapon":"Knife",
+	"stolenItems": "Paper money, a digital clock, a pair of keys, an assortment of jewelry, and a cut-out photograph of the victim."
 }, {
-	"description": "Attack #12 - Primrose Drive",
+	"description": "One woman",
 	"lat": 38.6685498,
 	"street": "Primrose Dr",
 	"location": "Citrus Heights",
@@ -157,9 +185,14 @@ export default
 	"lng": -121.2765904,
 	"type": "Attack",
 	"id": 12,
-	"name": "Attack #12"
+	"name": "Attack #12",
+	"victimAge": "25",
+	"victimOccupation": "Accountant",
+	"recievedCalls": "No",
+	"weapon":"Ice pick",
+	"stolenItems": "None"
 }, {
-	"description": "Attack #13 - Heathcliff Drive",
+	"description": "Woman, 7 year old daughter was in house",
 	"lat": 38.6546183,
 	"street": "Heathcliff Drive",
 	"location": "Carmichael",
@@ -168,7 +201,12 @@ export default
 	"lng": -121.3183394,
 	"type": "Attack",
 	"id": 13,
-	"name": "Attack #13"
+	"name": "Attack #13",
+	"victimAge": "30",
+	"victimOccupation": "Student(Sacramento State College, Social Science",
+	"recievedCalls": "Yes",
+	"weapon":"Gun,Knife",
+	"stolenItems": "None"
 }, {
 	"description": "Rodney Miller shot by prowler. Ripon Ct.",
 	"lat": 38.5530285,
@@ -179,9 +217,14 @@ export default
 	"lng": -121.3978895,
 	"type": "Attack",
 	"id": 14,
-	"name": "None"
+	"name": "None",
+	"victimAge": "18",
+	"victimOccupation": "Athlete",
+	"recievedCalls": "No",
+	"weapon":"Gun",
+	"stolenItems": "None"
 }, {
-	"description": "Attack #14 - Thornwood Drive",
+	"description": "Women alone",
 	"lat": 38.6232412,
 	"street": "Thornwood Drive",
 	"location": "Sacramento",
@@ -190,9 +233,14 @@ export default
 	"lng": -121.3779157,
 	"type": "Attack",
 	"id": 15,
-	"name": "Attack #14"
+	"name": "Attack #14",
+	"victimAge": "37",
+	"victimOccupation": "Unemployed",
+	"recievedCalls": "Yes",
+	"weapon":"Butcher Knife",
+	"stolenItems": "None"
 }, {
-	"description": "Attack #15 - Benny Way",
+	"description": "Teenage girl, This was the only assault where the victim managed to see the suspect's face because he was wearing an open-faced mask",
 	"lat": 38.5913525,
 	"street": "Benny Way",
 	"location": "Rancho Cordova",
@@ -201,9 +249,14 @@ export default
 	"lng": -121.3078735,
 	"type": "Attack",
 	"id": 16,
-	"name": "Attack #15"
+	"name": "Attack #15",
+	"victimAge": "16",
+	"victimOccupation": "Fast Food(KFC), Student",
+	"recievedCalls": "Yes",
+	"weapon":"Ax",
+	"stolenItems": "Two rings, the teenager's drivers license, and her sister's school identification"
 }, {
-	"description": "Attack #16 - Richdale Way",
+	"description": "Couple, This is the first attack in Orangevale, which is a Sacramento County community situated between Interstates 80 and 50",
 	"lat": 38.6621708,
 	"street": "Richdale Way",
 	"location": "Orangevale",
@@ -212,9 +265,14 @@ export default
 	"lng": -121.1979307,
 	"type": "Attack",
 	"id": 17,
-	"name": "Attack #16"
+	"name": "Attack #16",
+	"victimOccupation": "Clerk(Kaiser Pharmacy)",
+	"recievedCalls": "No",
+	"weapon":"Gun(.45 automatic)",
+	"stolenItems": "None"
+
 }, {
-	"description": "Attack #17 - Cherrelyn Way",
+	"description": "Woman and her boyfriend",
 	"lat": 38.6604713,
 	"street": "Cherrelyn Way",
 	"location": "Carmichael",
@@ -223,9 +281,15 @@ export default
 	"lng": -121.3220267,
 	"type": "Attack",
 	"id": 18,
-	"name": "Attack #17"
+	"name": "Attack #17",
+	"victimAge": "19",
+	"victimOccupation": "Typist",
+	"recievedCalls": "Yes",
+	"weapon":"Gun,Knife",
+	"stolenItems": " Marijuana, a half gram of cocaine, and a pill bottle containing two beans."
+
 }, {
-	"description": "Attack #18 - La Riviera Drive",
+	"description": "Couple",
 	"lat": 38.56180579999999,
 	"street": "La Riviera Drive",
 	"location": "Sacramento",
@@ -234,9 +298,15 @@ export default
 	"lng": -121.3870533,
 	"type": "Attack",
 	"id": 19,
-	"name": "Attack #18"
+	"name": "Attack #18",
+	"victimAge": "N/A",
+	"victimOccupation": "Part-time student (Sacramento City College, real estate), Air Force",
+	"recievedCalls": "Yes",
+	"weapon":"Gun(.45 caliber military automatic)",
+	"stolenItems": "Marijuana, a half gram of cocaine, and a pill bottle containing two beans."
+
 }, {
-	"description": "Attack #19 - Winterbrook Drive",
+	"description": "Couple",
 	"lat": 38.6611126,
 	"street": "Winterbrook Drive",
 	"location": "Orangevale",
@@ -245,9 +315,14 @@ export default
 	"lng": -121.1991945,
 	"type": "Attack",
 	"id": 20,
-	"name": "Attack #19"
+	"name": "Attack #19",
+	"victimAge": "25",
+	"victimOccupation": "Sales Assitant(Stockbroker)",
+	"recievedCalls": "No",
+	"weapon":"Gun, Knife",
+	"stolenItems": "None"
 }, {
-	"description": "Attack #20 - Merlindale Drive",
+	"description": "Couple",
 	"lat": 38.67492,
 	"street": "Merlindale Drive",
 	"location": "Citrus Heights",
@@ -256,9 +331,14 @@ export default
 	"lng": -121.2783485,
 	"type": "Attack",
 	"id": 21,
-	"name": "Attack #20"
+	"name": "Attack #20",
+	"victimAge": "N/A",
+	"victimOccupation": "Waitress",
+	"recievedCalls": "Yes",
+	"weapon":"Gun(.45 caliber military automatic), Knife",
+	"stolenItems": "Canadian coins, money from Victim's purse, rings from Victim's fingers"
 }, {
-	"description": "Attack #21 - Sandbar Circle",
+	"description": "Couple, Two small boys and husband's father",
 	"lat": 38.5830128,
 	"street": "Sandbar Circle",
 	"location": "Carmichael",
@@ -267,9 +347,14 @@ export default
 	"lng": -121.3420449,
 	"type": "Attack",
 	"id": 22,
-	"name": "Attack #21"
+	"name": "Attack #21",
+	"victimAge": "26",
+	"victimOccupation": "None",
+	"recievedCalls": "Yes",
+	"weapon":"Gun,Knife",
+	"stolenItems": "None"
 }, {
-	"description": "Attack #22 - 4th Park Way",
+	"description": "Couple and son",
 	"lat": 38.4984583,
 	"street": "4th Park Way",
 	"location": "Sacramento",
@@ -278,9 +363,14 @@ export default
 	"lng": -121.445745,
 	"type": "Attack",
 	"id": 23,
-	"name": "Attack #22"
+	"name": "Attack #22",
+	"victimAge": "N/A",
+	"victimOccupation": "None",
+	"recievedCalls": "No",
+	"weapon":"Gun(.45 caliber military automatic), Knife",
+	"stolenItems": "None"
 }, {
-	"description": "Attack #23 - Portage Circle",
+	"description": "Couple and two children",
 	"lat": 37.9957241,
 	"street": "Portage Circle South",
 	"location": "Stockton",
@@ -289,9 +379,14 @@ export default
 	"lng": -121.3591768,
 	"type": "Attack",
 	"id": 24,
-	"name": "Attack #23"
+	"name": "Attack #23",
+	"victimAge": "27",
+	"victimOccupation": "Local business owner",
+	"recievedCalls": "Yes(after attack)",
+	"weapon":"Gun(.45 caliber military automatic), Knife",
+	"stolenItems": "Five silver dollars, wedding and engagement rings, cufflinks, tie pin, man's onyx ring"
 }, {
-	"description": "Attack #24 - Tuolumne Drive",
+	"description": "Couple",
 	"lat": 38.5613186,
 	"street": "Tuolumne Drive",
 	"location": "Rancho Cordova",
@@ -300,9 +395,15 @@ export default
 	"lng": -121.3635279,
 	"type": "Attack",
 	"id": 25,
-	"name": "Attack #24"
+	"name": "Attack #24",
+	"victimAge": "17",
+	"victimOccupation": "Maid (Six Pence Motel - Sacramento)",
+	"recievedCalls": "No",
+	"weapon":"Gun(revolver), Knife",
+	"stolenItems": "None"
+
 }, {
-	"description": "Attack #25 - Gold Run Avenue",
+	"description": "Couple and two children",
 	"lat": 38.6907953,
 	"street": "Gold Run Avenue",
 	"location": "Sacramento",
@@ -311,9 +412,15 @@ export default
 	"lng": -121.3388581,
 	"type": "Attack",
 	"id": 26,
-	"name": "Attack #25"
+	"name": "Attack #25",
+	"victimAge": "32",
+	"victimOccupation": "None",
+	"recievedCalls": "Yes",
+	"weapon":"Gun, Knife",
+	"stolenItems": "None"
+
 }, {
-	"description": "Attack #26 - Woodson Avenue - Linked by paint to Witthuhn",
+	"description": "Couple",
 	"lat": 38.62930679999999,
 	"street": "Woodson Avenue",
 	"location": "Sacramento",
@@ -322,9 +429,14 @@ export default
 	"lng": -121.3595032,
 	"type": "Attack",
 	"id": 27,
-	"name": "Attack #26"
+	"name": "Attack #26",
+	"victimAge": "N/A",
+	"victimOccupation": "None",
+	"recievedCalls": "Yes",
+	"weapon":"Gun, Knife",
+	"stolenItems": "Wedding rings"
 }, {
-	"description": "Attack #27 - La Riviera Drive - Linked by paint to Witthuhn",
+	"description": "Daughter and Mom",
 	"lat": 38.56180579999999,
 	"street": "La Riviera Drive",
 	"location": "Sacramento",
@@ -333,9 +445,14 @@ export default
 	"lng": -121.3870533,
 	"type": "Attack",
 	"id": 28,
-	"name": "Attack #27"
+	"name": "Attack #27",
+	"victimAge": "13",
+	"victimOccupation": "Student(private school)",
+	"recievedCalls": "No",
+	"weapon":"Knife",
+	"stolenItems": "None"
 }, {
-	"description": "Attack #28 - Lobrett and Revelstok Dr",
+	"description": "Woman and daughter, EAR removed Victim's clothes but did not sexually assault her. Victim said she heard a van start and leave after EAR had left.",
 	"lat": 38.6743765,
 	"street": "Brett Dr",
 	"location": "Sacramento",
@@ -344,9 +461,15 @@ export default
 	"lng": -121.3541561,
 	"type": "Attack",
 	"id": 29,
-	"name": "Attack #28"
+	"name": "Attack #28",
+	"victimAge": "36",
+	"victimOccupation": "None",
+	"recievedCalls": "Yes",
+	"weapon":"None",
+	"stolenItems": "None"
+
 }, {
-	"description": "Attack #29 - Winding Way, E of Walnut, near American River College",
+	"description": "Two young sisters",
 	"lat": 38.6490576,
 	"street": "Winding Way",
 	"location": "Carmichael",
@@ -355,9 +478,14 @@ export default
 	"lng": -121.3193011,
 	"type": "Attack",
 	"id": 30,
-	"name": "Attack #29"
+	"name": "Attack #29",
+	"victimAge": "14,15",
+	"victimOccupation": "Students(La Sierra High School)",
+	"recievedCalls": "Yes",
+	"weapon":"Gun,Knife",
+	"stolenItems": "Two small photographs of Victim 1, two homemade earrings from Victim 2 (dimes with holes drilled), money"
 }, {
-	"description": "Maggiore double murder - La Alegria Drive",
+	"description": "Maggiore double murder,Air Force investigators reopened the case in 2014 after receiving a tip 37 years after the murder. EAR was tied to the murder due to laces tied in a specific knot presumably dropped by EAR and found near the scene of the murders. ",
 	"lat": 38.5867447,
 	"street": "La Algeria Drive",
 	"location": "Rancho Cordova",
@@ -366,9 +494,14 @@ export default
 	"lng": -121.3179323,
 	"type": "Attack",
 	"id": 31,
-	"name": "None"
+	"name": "None",
+	"victimAge": "21,20",
+	"victimOccupation": "Air Force Sergeant",
+	"recievedCalls": "No",
+	"weapon":"Gun",
+	"stolenItems": "None"
 }, {
-	"description": "Attack #30 - Meadow Ave",
+	"description": "Couple",
 	"lat": 38.0160352,
 	"street": "Meadow ave",
 	"location": "Stockton",
@@ -377,9 +510,15 @@ export default
 	"lng": -121.3358504,
 	"type": "Attack",
 	"id": 32,
-	"name": "Attack #30"
+	"name": "Attack #30",
+	"victimAge": "N/A",
+	"victimOccupation": "None",
+	"recievedCalls": "Yes",
+	"weapon":"Gun",
+	"stolenItems": "Driver's license, $13 cash, $150 in coins, earrings, rings, watch, high school picture of victim"
+
 }, {
-	"description": "Attack #31 - Piedmont Ave",
+	"description": "Single Girl,child was present that she was babysitting",
 	"lat": 38.5316825,
 	"street": "Pierdmont Ave",
 	"location": "Sacramento",
@@ -388,9 +527,14 @@ export default
 	"lng": -121.5236465,
 	"type": "Attack",
 	"id": 33,
-	"name": "Attack #31"
+	"name": "Attack #31",
+	"victimAge": "15",
+	"victimOccupation": "Babysitter",
+	"recievedCalls": "Yes",
+	"weapon":"Gun,Ice pick",
+	"stolenItems": "None"
 }, {
-	"description": "Attack #32 - Fuschia Lane",
+	"description": "Couple",
 	"lat": 37.692017,
 	"street": "Fuschia Lane",
 	"location": "Modesto",
@@ -399,7 +543,13 @@ export default
 	"lng": -120.998068,
 	"type": "Attack",
 	"id": 34,
-	"name": "Attack #32"
+	"name": "Attack #32",
+	"stolenItems": "None",
+	"victimAge": "27",
+	"victimOccupation": "None",
+	"recievedCalls": "Yes",
+	"weapon":"Gun,Knife",
+	"stolenItems": "$1500 cash"
 }, {
 	"description": "Attack #33 - Wake Forrest",
 	"lat": 38.5481497,
