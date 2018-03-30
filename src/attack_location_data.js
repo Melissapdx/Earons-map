@@ -551,29 +551,39 @@ export default
 	"weapon":"Gun,Knife",
 	"stolenItems": "$1500 cash"
 }, {
-	"description": "Attack #33 - Wake Forrest",
+	"description": "Woman Alone",
 	"lat": 38.5481497,
-	"street": "Portage Baye East",
+	"street": "Wake Forest Dr",//change street address in other file
 	"location": "Davis",
 	"time": "3:55AM",
 	"date": "6/7/1978",
 	"lng": -121.7834231,
 	"type": "Attack",
 	"id": 35,
-	"name": "Attack #33"
+	"name": "Attack #33",
+	"victimAge": "21",
+	"victimOccupation": "Student (University of California, Davis)",
+	"recievedCalls": "No",
+	"weapon":"Screwdriver, Nail File",
+	"stolenItems": "None"
 }, {
-	"description": "Attack #34  - Grand Prix",
+	"description": "Couple",
 	"lat": 37.6917507,
-	"street": "Sylvan Meadows Dr",
+	"street": "Grand Prix Dr",//update street address
 	"location": "Modesto",
 	"time": "1:30AM",
 	"date": "6/23/1978",
 	"lng": -120.974047,
 	"type": "Attack",
 	"id": 36,
-	"name": "Attack #34"
+	"name": "Attack #34",
+	"victimAge": "27",
+	"victimOccupation": "Modesto City Hospital",
+	"recievedCalls": "No",
+	"weapon":"Gun,Knife",
+	"stolenItems": "Wedding bands, .357 Magnum revolver (from nightstand)"
 }, {
-	"description": "Attack #35 - Rivendell",
+	"description": "Couple and three children",
 	"lat": 38.5482329,
 	"street": "Bucklebury Rd",
 	"location": "Davis",
@@ -582,9 +592,16 @@ export default
 	"lng": -121.7799347,
 	"type": "Attack",
 	"id": 37,
-	"name": "Attack #35"
+	"name": "Attack #35",
+	"victimAge": "32",
+	"victimOccupation": "Housewife",
+	"recievedCalls": "No",
+	"weapon":"Gun,Knife,ice pick",
+	"stolenItems": "17 rolls of pennies"
+
+
 }, {
-	"description": "Attack #36 - Amador Drive",
+	"description": "Woman and two young sons",
 	"lat": 38.5497056,
 	"street": "Amador Drive",
 	"location": "Davis",
@@ -593,9 +610,14 @@ export default
 	"lng": -121.7748113,
 	"type": "Attack",
 	"id": 38,
-	"name": "Attack #36"
+	"name": "Attack #36",
+	"victimAge": "33",
+	"victimOccupation": "Student(Sacremento State College)",
+	"recievedCalls": "No",
+	"weapon":"Gun,Knife,Screwdriver",
+	"stolenItems": "None"
 }, {
-	"description": "Attack #37 - Belann Ct",
+	"description": "Couple and baby",
 	"lat": 37.9435045,
 	"street": "Belann Ct",
 	"location": "Concord",
@@ -604,9 +626,14 @@ export default
 	"lng": -122.0265984,
 	"type": "Attack",
 	"id": 39,
-	"name": "Attack #37"
+	"name": "Attack #37",
+	"victimAge": "26",
+	"victimOccupation": "None",
+	"recievedCalls": "No",
+	"weapon":"Gun,Knife",
+	"stolenItems": "Approximately $4000 in jewelry, dishes, utensils, appliances, camera equipment, and miscellaneous items"
 }, {
-	"description": "Attack #38 - Ryan Court",
+	"description": "Couple and daughter",
 	"lat": 37.9445252,
 	"street": "Ryan Court",
 	"location": "Concord",
@@ -615,7 +642,12 @@ export default
 	"lng": -122.0207784,
 	"type": "Attack",
 	"id": 40,
-	"name": "Attack #38"
+	"name": "Attack #38",
+	"victimAge": "29",
+	"victimOccupation": "Accountant",
+	"recievedCalls": "No",
+	"weapon":"Gun,Knife",
+	"stolenItems": "None"
 }, {
 	"description": "Attack #39 - Montclair Place",
 	"lat": 37.7393183,
@@ -626,9 +658,14 @@ export default
 	"lng": -121.9480848,
 	"type": "Attack",
 	"id": 41,
-	"name": "Attack #39"
+	"name": "Attack #39",
+	"victimAge": "23",
+	"victimOccupation": "Travel agent",
+	"recievedCalls": "No",
+	"weapon":"Gun",
+	"stolenItems": "None"
 }, {
-	"description": "Attack #40 - Havenwood Drive",
+	"description": "Woman and baby",
 	"lat": 37.3930054,
 	"street": "Havenwood Dr",
 	"location": "San Jose",
@@ -637,9 +674,14 @@ export default
 	"lng": -121.8655947,
 	"type": "Attack",
 	"id": 42,
-	"name": "Attack #40"
+	"name": "Attack #40",
+	"victimAge": "34",
+	"victimOccupation": "None",
+	"recievedCalls": "No",
+	"weapon":"Knife",
+	"stolenItems": "None"
 }, {
-	"description": "Attack #41 - Kersey Lane",
+	"description": "Couple",
 	"lat": 37.4027879,
 	"street": "Kesey Lane",
 	"location": "San Jose",
@@ -648,9 +690,14 @@ export default
 	"lng": -121.872515,
 	"type": "Attack",
 	"id": 43,
-	"name": "Attack #41"
+	"name": "Attack #41",
+	"victimAge": "N/A",
+	"victimOccupation": "R.N(Stanford Hospital)",
+	"recievedCalls": "No",
+	"weapon":"Gun,Knife",
+	"stolenItems": "$70, a six-pack of Coors, Gold nugget wedding ring, GE digital clock radio"
 }, {
-	"description": "Attack #42 - Liberta Ct",
+	"description": "Woman alone",
 	"lat": 37.8052374,
 	"street": "Liberta Ct",
 	"location": "Danville",
@@ -659,9 +706,14 @@ export default
 	"lng": -121.9848486,
 	"type": "Attack",
 	"id": 44,
-	"name": "Attack #42"
+	"name": "Attack #42",
+	"victimAge": "32",
+	"victimOccupation": "Office Worker(In Danville)",
+	"recievedCalls": "No",
+	"weapon":"Knife",
+	"stolenItems": "Driver's license, ring, antique stickpin, two pendants from a jewelry box"
 }, {
-	"description": "Attack #43 - Filmore Lane - Likely not EAR",
+	"description": "Woman and two children",
 	"lat": 38.6153095,
 	"street": "Filmore Lane",
 	"location": "Rancho Cordova",
@@ -670,9 +722,15 @@ export default
 	"lng": -121.2748523,
 	"type": "Attack",
 	"id": 45,
-	"name": "Attack #43"
+	"name": "Attack #43",
+	"victimAge": "N/A",
+	"victimOccupation": "Secretary (at 2700 block of Cottage Way in Sacramento)",
+	"recievedCalls": "Yes",
+	"weapon":"Knife",
+	"stolenItems": "Jewelry worth $3,000"
+
 }, {
-	"description": "Attack #44 - Honda Way",
+	"description": "Couple",
 	"lat": 37.5469656,
 	"street": "Honda Way",
 	"location": "Fremont",
@@ -681,9 +739,14 @@ export default
 	"lng": -121.9445224,
 	"type": "Attack",
 	"id": 46,
-	"name": "Attack #44"
+	"name": "Attack #44",
+	"victimAge": "27",
+	"victimOccupation": "Secretary (in Burlingmae)",
+	"recievedCalls": "No",
+	"weapon":"Gun,Knife",
+	"stolenItems": "$1,600"
 }, {
-	"description": "Attack #45 - El Divisadero Drive",
+	"description": "Girl,babysitting two kids",
 	"lat": 37.9157104,
 	"street": "El Divisadero Ave",
 	"location": "Walnut Creek",
@@ -692,9 +755,14 @@ export default
 	"lng": -122.0323142,
 	"type": "Attack",
 	"id": 47,
-	"name": "Attack #45"
+	"name": "Attack #45",
+	"victimAge": "17",
+	"victimOccupation": "Babysitter",
+	"recievedCalls": "Yes",
+	"weapon":"Knife",
+	"stolenItems": "None"
 }, {
-	"description": "Attack #46 - Allegheny Drive",
+	"description": "Couple and 1 child, this is connected to ONS by DNA",
 	"lat": 37.8019226,
 	"street": "Allegheny Drive",
 	"location": "Danville",
@@ -703,9 +771,14 @@ export default
 	"lng": -121.9857861,
 	"type": "Attack",
 	"id": 48,
-	"name": "Attack #46"
+	"name": "Attack #46",
+	"victimAge": "35",
+	"victimOccupation": "Housewife",
+	"recievedCalls": "No",
+	"weapon":"Gun,Knife",
+	"stolenItems": "None"
 }, {
-	"description": "Attack #47 - San Pedro Court",
+	"description": "Young girl, Father and 16 year old sister were home",
 	"lat": 37.9134998,
 	"street": "San Pedro Court",
 	"location": "Walnut Creek",
@@ -714,9 +787,14 @@ export default
 	"lng": -122.0345353,
 	"type": "Attack",
 	"id": 49,
-	"name": "Attack #47"
+	"name": "Attack #47",
+	"victimAge": "13",
+	"victimOccupation": "Student",
+	"recievedCalls": "Yes",
+	"weapon":"Knife",
+	"stolenItems": "Victim's hairbrush"
 }, {
-	"description": "Attack #48 - Sycamore Court - Botched. Victim woke while EAR was putting on mask.",
+	"description": "Couple,Botched. Victim woke while EAR was putting on mask and help was called.Last known Northern California attack",
 	"lat": 37.819154,
 	"street": "Thornhill Drive",
 	"location": "Danville",
@@ -725,9 +803,14 @@ export default
 	"lng": -121.978233,
 	"type": "Attack",
 	"id": 50,
-	"name": "Attack #48"
+	"name": "Attack #48",
+	"victimAge": "N/A",
+	"victimOccupation": "N/A",
+	"recievedCalls": "no",
+	"weapon":"No",
+	"stolenItems": "None"
 }, {
-	"description": "Botches ONS #1 - 5425 Queen Ann Lane",
+	"description": "Couple, Botched attack, ONS #1",
 	"lat": 34.4556012,
 	"street": "Queen Ann Lane",
 	"location": "Goleta",
@@ -736,9 +819,14 @@ export default
 	"lng": -119.8144927,
 	"type": "Attack",
 	"id": 51,
-	"name": "ONS Attack #1"
+	"name": "ONS Attack #1",
+	"victimAge": "N/A",
+	"victimOccupation": "Computer programmer",
+	"recievedCalls": "No",
+	"weapon":"Knife",
+	"stolenItems": "None"
 }, {
-	"description": "Offerman/Manning",
+	"description": "Offerman/Manning Murdered, ONS #2",
 	"lat": 34.4522488,
 	"street": "Avenida Pequena Ave",
 	"location": "Goleta",
@@ -747,9 +835,14 @@ export default
 	"lng": -119.8116062,
 	"type": "Attack",
 	"id": 52,
-	"name": "ONS Attack #2"
+	"name": "ONS Attack #2",
+	"victimAge": "44,35",
+	"victimOccupation": "Orthopedic surgeon (Offerman), Psychologist (Manning)",
+	"recievedCalls": "Yes",
+	"weapon":"Gun(.38 caliber revolver)",
+	"stolenItems": "None"
 }, {
-	"description": "Smiths",
+	"description": "Smiths, Murdered",
 	"lat": 34.2918461,
 	"street": "High Point Dr",
 	"location": "Ventura",
@@ -758,9 +851,14 @@ export default
 	"lng": -119.2013322,
 	"type": "Attack",
 	"id": 53,
-	"name": "ONS Attack #3"
+	"name": "ONS Attack #3",
+	"victimAge": "43,33",
+	"victimOccupation": "Attorney (L. Smith), Interior decorator (C. Smith)",
+	"recievedCalls": "No",
+	"weapon":"Fire log",
+	"stolenItems": "None"
 }, {
-	"description": "Harringtons",
+	"description": "Harringtons, Murdered, Only couple to live in gated community",
 	"lat": 33.4772966,
 	"street": "Cockleshell Dr",
 	"location": "Dana Point",
@@ -769,7 +867,12 @@ export default
 	"lng": -117.7111636,
 	"type": "Attack",
 	"id": 54,
-	"name": "ONS Attack #4"
+	"name": "ONS Attack #4",
+	"victimAge": "24,28",
+	"victimOccupation": "Medical student (K. Harrington), R.N. (P. Harrington)",
+	"recievedCalls": "No",
+	"weapon":"Blunt instrument",
+	"stolenItems": "None"
 }, {
 	"description": "Witthuhn",
 	"lat": 33.7046628,
@@ -780,9 +883,14 @@ export default
 	"lng": -117.7642059,
 	"type": "Attack",
 	"id": 55,
-	"name": "ONS Attack #5"
+	"name": "ONS Attack #5",
+	"victimAge": "28",
+	"victimOccupation": "Student, mortgage broker",
+	"recievedCalls": "No",
+	"weapon":"Blunt instrument",
+	"stolenItems": "None"
 }, {
-	"description": "Domingo/Sanchez",
+	"description": "Domingo/Sanchez, this case was linked via DNA",
 	"lat": 34.4471792,
 	"street": "Toltec Way",
 	"location": "Goleta",
@@ -791,9 +899,14 @@ export default
 	"lng": -119.8142778,
 	"type": "Attack",
 	"id": 56,
-	"name": "ONS Attack #6"
+	"name": "ONS Attack #6",
+	"victimAge": "35,27",
+	"victimOccupation": "Worked with computers",
+	"recievedCalls": "No",
+	"weapon":"Blunt instrument",
+	"stolenItems": "None"
 }, {
-	"description": "Cruz",
+	"description": "Cruz, youngest known homcide victim",
 	"lat": 33.7228641,
 	"street": "13 Encina",
 	"location": "Irvine",
@@ -802,5 +915,10 @@ export default
 	"lng": -117.768814,
 	"type": "Attack",
 	"id": 57,
-	"name": "ONS Attack #7"
+	"name": "ONS Attack #7",
+	"victimAge": "18",
+	"victimOccupation": "Cashier(Bullwinkle's pizza)",
+	"recievedCalls": "No",
+	"weapon":"Blunt instrument",
+	"stolenItems": "None"
 }]
