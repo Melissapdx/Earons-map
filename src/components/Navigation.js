@@ -5,7 +5,7 @@ class Navigation extends React.Component {
 		return (
 				<header className="navigation">
 				<div class="typewriter">
-					<h1 className="header">Earons</h1>
+					<h1 className="header">Golden State Killer</h1>
 				</div>
 					<ul className="menu">
 						<li>Home</li>

@@ -1,5 +1,6 @@
 import React from 'react';
 import data from '../../attack_location_data.js';
+import helper from '../../helpers.js';
 class ShowMap extends React.Component {
 
 	constructor(props){
