@@ -26,14 +26,12 @@ class Graphs extends React.Component {
 						margin={{ top: 10, bottom: 25 }}
 					>
 						<CartesianGrid strokeDasharray="3 3" />
-						<XAxis dataKey="data">
+						<XAxis dataKey="key">
 							<Label value="Age Of Victim" offset={-10} position="insideBottom" />
 						</XAxis>
 						<YAxis dataKey="value"/>
 						<Tooltip />
-						<Bar dataKey="10-15" fill="#E4572E" />
-						<Bar dataKey="16-20" fill="#E4572E" />
-						<Bar dataKey="21+" fill="#E4572E" />
+						<Bar dataKey="value" fill="#E4572E" />
 					</BarChart>
 				</ResponsiveContainer>
 		        </div>

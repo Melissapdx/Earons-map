@@ -3,20 +3,31 @@ import attackData from './attack_location_data.js';
 export default attackData;
 
 export const formatDataByAge = () => {
-	let ageRanges = {
-		"10-15": 0,
-		"16-20": 0,
-		"21+": 0
+	let smallAgeRange = {
+		key: "10-15",
+		value: 0,
 	}
-	
+	let medAgeRange = {
+		key: "16-20",
+		value: 0,
+	}
+	let highAgeRange = {
+		key: "21+",
+		value: 0,
+	}
+
+	const graphData =[]
 	for(var i = 0; i < attackData.length; i++){
 		if(attackData[i].victimAge >= 10 && attackData[i].victimAge <= 15){ 
-			ageRanges["10-15"] += 1;
+			smallAgeRange.value += 1; 
 		} else if (attackData[i].victimAge >= 16 && attackData[i].victimAge <= 20){
-			ageRanges["16-20"] += 1;
-		}else if (attackData[i].victimAge >= 21){
-			ageRanges["21+"] += 1;
+			medAgeRange.value += 1;
+		} else if (attackData[i].victimAge >= 21){
+			highAgeRange.value += 1;
 		}
 	}
-	return ageRanges;
+	graphData.push(smallAgeRange);
+	graphData.push(medAgeRange);
+	graphData.push(highAgeRange);
+	return graphData
 };
