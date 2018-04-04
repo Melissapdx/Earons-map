@@ -1,28 +1,37 @@
 import React from 'react';
-import { BarChart,Legend,Bar, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
+import { BarChart,Legend,Bar, Label, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
+import helper, * as helpers from '../helpers.js';
+
 
 class Graphs extends React.Component {
 	constructor(props){
 		super(props);
 		this.state = {
-			graph: null	
+			graph: null,
+			data: helpers.formatDataByAge()
 		};
 	}
 	componentDidMount(){
 	
 	}
 	render(){
+		// Age Range Number of Attacks
+		// <Bar dataKey="Ages" fill="#E4572E" />
 		return (
 			<div className="graphs">
 		        <div className="graph">
 		        <ResponsiveContainer width={500} height="100%">
-					<BarChart>
+					<BarChart
+						data={this.state.data}
+						margin={{ top: 10, bottom: 25 }}
+					>
 						<CartesianGrid strokeDasharray="3 3" />
-						<XAxis dataKey="Age Range" />
-						<YAxis dataKey="Number of Attacks"/>
+						<XAxis dataKey="age">
+							<Label value="Age Of Victim" offset={-10} position="insideBottom" />
+						</XAxis>
+						<YAxis dataKey="value"/>
 						<Tooltip />
-						<Legend />
-						<Bar dataKey="Ages" fill="#E4572E" />
+						<Bar dataKey="value" fill="#E4572E" />
 					</BarChart>
 				</ResponsiveContainer>
 		        </div>
