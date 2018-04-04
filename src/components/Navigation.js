@@ -4,7 +4,7 @@ class Navigation extends React.Component {
 	render() {
 		return (
 				<header className="navigation">
-				<div class="typewriter">
+				<div className="typewriter">
 					<h1 className="header">Golden State Killer</h1>
 				</div>
 					<ul className="menu">

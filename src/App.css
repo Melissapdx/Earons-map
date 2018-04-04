@@ -71,9 +71,6 @@ a{
     justify-content:center;
 }
 .graph{
-    background-color: pink;
-    height:300px;
-    width:300px;
-    margin:20px;
+      min-height: 300px;
 
     }
