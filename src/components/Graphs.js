@@ -10,17 +10,16 @@ class Graphs extends React.Component {
 			graph: null,
 			data: helpers.formatDataByAge()
 		};
+		console.log(helpers.formatDataByAge());
 	}
 	componentDidMount(){
 	
 	}
 	render(){
-		// Age Range Number of Attacks
-		// <Bar dataKey="Ages" fill="#E4572E" />
 		return (
 			<div className="graphs">
 		        <div className="graph">
-		        <ResponsiveContainer width={500} height="100%">
+		        <ResponsiveContainer width={400} height="100%">
 					<BarChart
 						data={this.state.data}
 						margin={{ top: 10, bottom: 25 }}
