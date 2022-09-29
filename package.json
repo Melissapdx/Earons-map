@@ -8,7 +8,7 @@
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.0",
-    "recharts": "^1.0.0-beta.10"
+    "recharts": "^2.1.14"
   },
   "scripts": {
     "start": "react-scripts start",
